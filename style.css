@@ -1,0 +1,520 @@
+/*
+Theme Name:   EUF Projects Theme
+Theme URI:    https://nata.sk/child-theme
+Description:  WordPress child theme for EUF project websites
+Author:       Nata
+Author URI:   https://nata.sk/
+Template:     Divi
+Version:      1.0.3
+*/
+
+/*
+Theme Customizer Settings
+
+Fonts
+
+EUF Projects
+
+	Header
+	Images - Captions
+	Menu
+	Footer
+	Cookie bar
+	Homepage
+
+*/
+
+/* Theme Customizer Settings */
+
+#customize-control-et_divi-boxed_layout {
+	display: none !important;
+}
+
+/* Fonts */
+
+h2 {
+	font-size: 30px;
+}
+
+/* EUF Projects */
+/* Header */
+
+div.et_menu_container {
+	width: 100%;
+	max-width: 100%;
+	padding-right: 30px;
+	padding-left: 30px;
+	x-index: 99;
+}
+
+div.container.clearfix.et_menu_container {
+	border-bottom: solid 2px #ececec;
+}
+
+body {
+	font-family: "Open Sans", Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+	font-family: "Open Sans", Arial, sans-serif;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+/*IMAGES*/
+/*Captions*/
+
+h6 {
+	text-align: center;
+	font-size: 12px;
+	font-style: italic;
+	padding-top: 0;
+	padding-bottom: 10px;
+}
+
+div.wp-caption {
+	border: none;
+	background-color: #ffffff;
+}
+
+p.wp-caption-text {
+	font-size: 12px;
+	font-style: italic;
+	font-weight: bold;
+	padding-top: 0;
+	line-height: 1.5;
+}
+
+div.wp-caption.alignleft {
+	padding-left: 0 !important;
+}
+
+/* 
+p a {
+	color: #F8B234;
+}
+
+
+li a {
+	color: #F8B234;
+}
+*/
+
+/*MENU*/
+/* Move dropdown menu to the left */
+
+@media only screen and (min-width: 981px) {
+	ul.sub-menu {
+		margin-left: -50px;
+	}
+}
+
+/*FOOTER*/
+/* Responsive
+==================================== 
+@mixin for-narrow {
+	@media (max-width: 220px) { @content; }
+} */
+
+.narrow {
+	display: block;
+}
+.footer-cell {
+	width: 100% !important;
+}
+
+div.Rtable,
+div#custom_html-8 {
+	width: 100%;
+}
+
+/*change SM icons in footer – make circles */
+.et-social-facebook a.icon:before {
+	content: "\e0aa";
+}
+.et-social-twitter a.icon:before {
+	content: "\e0ab";
+}
+.et-social-linkedin a.icon:before {
+	content: "\e0b4";
+}
+.et-social-mail a.icon:before {
+	content: "\e076";
+}
+.et-social-rss a.icon:before {
+	content: "\e0b5";
+}
+
+p.footer-newsletter {
+	font-size: 14px;
+	color: #ffffff;
+	float: right;
+	padding-bottom: 7px;
+	text-align: right;
+}
+
+/* Cookie bar 
+div.cookie-notice-container a {
+	background-color: #F8B234;
+	background-image: none;
+	color: #4A4A4A;
+}
+
+div.cookie-notice-container a:hover {
+	background-color: #ffffff!important;
+	color: #4A4A4A!important;
+}
+*/
+/*  CUSTOM STYLING FOR EUF by NATA  –  CONTENTS
+
+- images
+- Menu
+- Footer
+- Cookie bar
+- Homepage
+--- Slider
+- Posts 
+--- Remove dividing line from blog post
+- Projects
+--- Style projects
+--- Grid thing to three columns
+- Impact
+- Focus - ACCORDION
+- UNIVERSITIES
+--- Disable scroll zoom on map
+--- Php template styling
+- EVENTS + REGISTRATION
+*/
+
+/*IMAGES*/
+/*Captions*/
+
+h6 {
+	text-align: center;
+	font-size: 12px;
+	font-style: italic;
+	padding-top: 0;
+	padding-bottom: 10px;
+}
+
+div.wp-caption {
+	border: none;
+	background-color: #ffffff;
+}
+
+p.wp-caption-text {
+	font-size: 12px;
+	font-style: italic;
+	font-weight: bold;
+	padding-top: 0;
+	line-height: 1.5;
+}
+
+div.wp-caption.alignleft {
+	padding-left: 0 !important;
+}
+
+/*FOOTER*/
+/* Responsive
+==================================== 
+@mixin for-narrow {
+	@media (max-width: 220px) { @content; }
+} */
+
+.narrow {
+	display: block;
+}
+.footer-cell {
+	width: 100% !important;
+}
+
+div.Rtable,
+div#custom_html-8 {
+	width: 100%;
+}
+
+/*change SM icons in footer – make circles */
+.et-social-facebook a.icon:before {
+	content: "\e0aa";
+}
+.et-social-twitter a.icon:before {
+	content: "\e0ab";
+}
+.et-social-linkedin a.icon:before {
+	content: "\e0b4";
+}
+.et-social-mail a.icon:before {
+	content: "\e076";
+}
+.et-social-rss a.icon:before {
+	content: "\e0b5";
+}
+
+p.footer-newsletter {
+	font-size: 14px;
+	color: #ffffff;
+	float: right;
+	padding-bottom: 7px;
+	text-align: right;
+}
+
+/* HOMEPAGE */
+/* Slider 
+#homepage-slider.et_pb_button .et_pb_more_button:hover {
+	border: 1px solid #fff;
+	border-color: #fff!important;
+}
+
+.et_pb_fullwidth_slider_0 .et_pb_slide_description {
+	text-align: left; 
+	padding-top: 27%!important;
+	padding-bottom: 2.5em!important;
+} */
+
+/* HOMEPAGE - media queries */
+/* 3 icons overlap for tablets and desktop  - toto nefunguje
+@media only screen and (max-width: 980px ) {
+	div.et_pb_column_2#projects {
+		margin-top: 0!important;
+	}	
+	
+	div.et_pb_column_3#resources {
+		margin-top: 0!important;
+	}	
+	
+	div.et_pb_column_4#members {
+		margin-top: 0!important;
+	}	
+} */
+
+/* Add overlay color to welcom text parallax for Smartphones in portrait mode (0-479px) */
+@media only screen and (max-width: 479px) {
+	div#homepage-about-welcome-bcg {
+		background-color: rgba(248, 178, 52, 0.5) !important;
+	}
+}
+
+/* Homepage blog section */
+.et_pb_image_container {
+	border-top: 1px solid #d8d8d8;
+	border-left: 1px solid #d8d8d8;
+	border-right: 1px solid #d8d8d8;
+}
+
+p.post-meta {
+	padding-left: 0 !important;
+}
+
+/* POSTS */
+/*Remove dividing line from blog post */
+.container:before {
+	background-color: transparent !important;
+}
+.et_pb_widget_area_right {
+	border-left: 0 !important;
+}
+.et_pb_widget_area_left {
+	border-right: 0 !important;
+}
+
+/*Style posts and projects - grey bcg, white bcg on article and sidebar*/
+div #main-content {
+	background-color: #f4f4f4;
+}
+
+div #sidebar {
+	background-color: #f4f4f4;
+	padding-left: 0 !important;
+}
+
+div#sidebar div.et_pb_widget {
+	padding: 1.6em;
+	margin-bottom: 1.6em;
+	background-color: #fff;
+}
+
+/* Style PROJECTS and POSTS */
+/*a sets background and spacing for H1 */
+div#left-area article.project div.et_main_title,
+div#left-area div.et_main_title {
+	background-color: #ffffff !important;
+	padding: 1.6em 2em 0.4em 2em !important;
+	margin-top: -6px;
+}
+
+div#left-area div.entry-content,
+.post-meta {
+	background-color: #ffffff !important;
+	padding: 0.4em 2em 1.6em 2em !important;
+}
+
+/* removes project category below the title */
+span.et_project_categories {
+	display: none;
+}
+
+div.three-column-grid h2.et_pb_module_header,
+.post-meta {
+	padding: 0 10px 10px 10px;
+	background-color: #ffffff;
+	height: 3em;
+}
+
+/* THREE COLUMN PORTFOLIO GRID LAYOUT */
+
+@media only screen and (min-width: 768px) {
+	.three-column-grid .et_pb_grid_item {
+		width: 29% !important; /*28.333%*/
+		margin: 0 3% 3% 0 !important; /*0 7.5% 7.5% 0 !important;*/
+	}
+
+	.three-column-grid .et_pb_grid_item:nth-child(3n) {
+		margin-right: 0 !important;
+	}
+
+	.three-column-grid .et_pb_grid_item:nth-child(3n + 1) {
+		clear: left;
+	}
+
+	.three-column-grid .et_pb_grid_item:nth-child(4n + 1) {
+		clear: unset !important;
+	}
+}
+
+/* Add overlay color to welcom text parallax for Smartphones in portrait mode (0-479px) */
+@media only screen and (max-width: 479px) {
+	div#homepage-parallax-overlay {
+		background-color: rgba(248, 178, 52, 0.5) !important;
+	}
+}
+
+/*IMPACT*/
+
+div.et_pb_vertical_timeline_0 .cd-timeline-content {
+	box-shadow: none;
+}
+
+div.et_pb_vertical_timeline_0 .cd-timeline-img .et-pb-icon {
+	box-shadow: 0 0 0 2px #f8b234;
+}
+
+/* display year on mobiles */
+
+span.cd-date {
+	display: inline !important;
+}
+
+/* FOCUS - add close icon to accordions */
+.et_pb_toggle_open .et_pb_toggle_title:before {
+	display: block !important;
+	content: "\e04f";
+}
+
+/* EVENTS + REGISTRATION */
+
+div.related-past-event div.et_pb_blurb_container {
+	padding: 0 20px 20px 20px;
+}
+
+/* Form styling */
+input,
+textarea {
+	width: 100%;
+	padding: 8px !important;
+	border: 1px solid #d9d9d9 !important;
+	font-size: 13px !important;
+}
+
+input.wpcf7-submit {
+	width: 40%;
+	display: block;
+	margin: auto;
+	color: #ffffff;
+	font-weight: 600;
+	font-size: 16px !important;
+	background-color: #f8b234;
+	border: none !important;
+}
+
+input.wpcf7-submit:hover {
+	background-color: #939393;
+}
+
+input#acceptance {
+	float: left;
+	width: auto;
+	margin-right: 10px;
+}
+
+/* Form - checkboxes - //uni-foundation.eu/erasmus-goes-digital-luxembourg/ */
+span.wpcf7-list-item {
+	display: table-row;
+}
+span.wpcf7-list-item * {
+	display: table-cell;
+	text-align: left;
+}
+input[type="checkbox"],
+input[type="radio"] {
+	margin: 15px 25px 0 0;
+}
+
+label {
+	font-weight: bold;
+}
+
+.checkbox-below-description {
+	padding: 0 0 0 25px;
+}
+/* div#wpcf7-f50668-p50663-o1 p { padding-bottom: 0; }
+
+/* some old css */
+/*NAVIGATION*/
+/* Navigation styling */
+#top-menu li {
+	padding-right: 32px;
+	text-transform: uppercase;
+}
+
+div.container.clearfix.et_menu_container {
+	border-bottom: solid 2px #ececec;
+}
+
+/*FOOTER*/
+/* Used in footer img icon, to add more space around the icon */
+.add-padding {
+	padding: 0 15px;
+}
+
+/*Footer Social Media Links*/
+.SM-icon-div {
+	margin: 0 auto 0 auto;
+	text-align: center;
+	float: left;
+	padding: 16px;
+}
+
+.SM-icon-img {
+	width: 42px;
+}
+
+.SM-icons {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	white-space: nowrap;
+}
+
+.fwidget {
+	margin-bottom: 0 !important;
+}
