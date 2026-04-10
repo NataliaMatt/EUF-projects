@@ -4,7 +4,7 @@ Theme URI:    https://uni-foundation.eu/
 Description:  WordPress child theme for EUF project websites
 Author:       Natalia
 Template:     Divi
-Version:      1.0.5
+Version:      1.0.6
 
 GitHub Theme URI: https://github.com/NataliaMatt/EUF-projects
 Primary branch: main
@@ -153,8 +153,9 @@ p.footer-newsletter {
 	text-align: right;
 }
 
-/*  CUSTOM STYLING FOR EUF by NATA  –  CONTENTS
+/*  Contents
 
+- columns
 - images
 - Menu
 - Footer
@@ -173,6 +174,76 @@ p.footer-newsletter {
 --- Php template styling
 - EVENTS + REGISTRATION
 */
+
+/*MULTIPLE COLUMNS SUPPORT begin */
+/* COLUMNS */
+.ten-columns .et_pb_module {
+	width: 10%;
+	float: left;
+}
+.nine-columns .et_pb_module {
+	width: 11.11%;
+	float: left;
+}
+.eight-columns .et_pb_module {
+	width: 12.5%;
+	float: left;
+}
+.seven-columns .et_pb_module {
+	width: 14.28%;
+	float: left;
+}
+.six-columns .et_pb_module {
+	width: 16.66%;
+	float: left;
+}
+.five-columns .et_pb_module {
+	width: 20%;
+	float: left;
+}
+
+@media (max-width: 980px) {
+	.ten-columns .et_pb_module {
+		width: 20%;
+	}
+	.nine-columns .et_pb_module {
+		width: 33.3%;
+	}
+	.eight-columns .et_pb_module {
+		width: 25%;
+	}
+	.seven-columns .et_pb_module {
+		width: 25%;
+	}
+	.six-columns .et_pb_module {
+		width: 33.3%;
+	}
+	.five-columns .et_pb_module {
+		width: 33.3%;
+	}
+}
+
+@media all and (max-width: 767px) {
+	.ten-columns .et_pb_module {
+		width: 100%;
+	}
+	.nine-columns .et_pb_module {
+		width: 100%;
+	}
+	.eight-columns .et_pb_module {
+		width: 100%;
+	}
+	.seven-columns .et_pb_module {
+		width: 100%;
+	}
+	.six-columns .et_pb_module {
+		width: 100%;
+	}
+	.five-columns .et_pb_module {
+		width: 100%;
+	}
+}
+/*MULTIPLE COLUMNS SUPPORT end */
 
 /*IMAGES*/
 /*Captions*/
